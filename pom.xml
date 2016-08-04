@@ -30,6 +30,6 @@
   </dependencies>
 
   <build>
-    <finalName>jsftest</finalName>
+    <finalName>jsftest5</finalName>
   </build>
 </project>

@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="jsftest" />
+        <module name="jsftest5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jsftest" target="1.5" />
+      <module name="jsftest5" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
