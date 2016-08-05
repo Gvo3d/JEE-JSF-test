@@ -8,6 +8,7 @@
   <name>jsftest Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -32,4 +33,5 @@
   <build>
     <finalName>jsftest5</finalName>
   </build>
+
 </project>

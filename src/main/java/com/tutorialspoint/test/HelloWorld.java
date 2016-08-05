@@ -8,12 +8,11 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 public class HelloWorld {
 
-
-
     public HelloWorld() {
         System.out.println("HelloWorld started!");
     }
+
     public String getMessage() {
-        return new String ("home");
+        return "Hello World!";
     }
 }
