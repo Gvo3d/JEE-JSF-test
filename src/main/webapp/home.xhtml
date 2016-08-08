@@ -3,28 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core">
-<head></head>
+<head>
+    <title>JSF Tutorial!</title>
+</head>
 <body>
-<h2>h:messages example</h2>
-<hr/>
-
-    <h:form>
-        <h:panelGrid id="panel" columns="3" border="0" cellpadding="10"
-                     cellspacing="1">
-            <h:outputLabel value="Enter Username"/>
-            <h:inputText id="username" size="20" label="UserName"
-                         required="true">
-                <f:validateLength for="username" minimum="5" maximum="20"/>
-            </h:inputText>
-            <h:message for="username" style="color:red"/>
-            <h:outputLabel value="Enter Password"/>
-            <h:inputSecret id="password" size="20" label="Password"
-                           required="true" redisplay="true">
-                <f:validateLength for="password" minimum="5" maximum="10"/>
-            </h:inputSecret>
-            <h:message for="password" style="color:red"/>
-            <h:commandButton id="submit" value="Submit" action="result"/>
-       </h:panelGrid>
-    </h:form>
+<h2>f:param example</h2>
+<hr />
+<h:form>
+    <h:outputFormat value="Hello {0}!.">
+        <f:param value="World" />
+    </h:outputFormat>
+    <br/>
+    <h:commandButton id="submit"
+                     value="Show Message" action="#{userData.showResult}">
+        <f:param name="username" value="JSF 2.0 User" />
+    </h:commandButton>
+</h:form>
 </body>
 </html>
