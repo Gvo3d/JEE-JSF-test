@@ -10,6 +10,9 @@
     <welcome-file>faces/home.xhtml</welcome-file>
   </welcome-file-list>
 
+
+
+
   <!--
      FacesServlet is main servlet responsible to handle all request.
      It acts as central controller.
@@ -41,5 +44,6 @@
     <servlet-name>Faces Servlet</servlet-name>
     <url-pattern>*.xhtml</url-pattern>
   </servlet-mapping>
+
 
 </web-app>
